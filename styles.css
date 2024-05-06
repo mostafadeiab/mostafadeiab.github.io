@@ -73,3 +73,59 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.skill {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    width: 80%;
+    transition: opacity 0.3s ease;
+}
+
+.skill-name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.skill:hover .skill-name {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
