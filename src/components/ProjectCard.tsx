@@ -43,7 +43,7 @@ export function ProjectCard({ project }: Props) {
       <CardFooter className="flex h-full flex-col items-start justify-between gap-4">
         {tags && tags.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-1">
-            {tags.toSorted().map((tag) => (
+            {[...tags].sort().map((tag) => (
               <Badge
                 key={tag}
                 className="px-1 py-0 text-[10px]"
@@ -56,7 +56,7 @@ export function ProjectCard({ project }: Props) {
         )}
         {links && links.length > 0 && (
           <div className="flex flex-row flex-wrap items-start gap-1">
-            {links.toSorted().map((link, idx) => (
+            {[...links].sort((a, b) => a.name.localeCompare(b.name)).map((link, idx) => (
               <Link href={link?.href} key={idx} target="_blank">
                 <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
                   <Icon name={link.icon} className="size-3" />
