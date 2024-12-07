@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "name": "Custom News Aggregator",
+      "description": "Developed an AI-powered software to aggregate and summarize daily news from various sources, tailored to user-specified topics. Implemented Web Scraping and NLP techniques to extract and summarize relevant news.",
+      "image": "",
+      "tags": [
+        "Python",
+        "AI",
+        "Docker",
+        "API"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/mostafadeiab/News-Aggregator",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Computer Architecture",
+      "description": "Benchmarked Artificial and Convolutional Neural(ANN, CNN) on Edge Server Architectures, improving inference time by 30%. Validating hardware accelerators (GPU, FPGA), optimizing AI-based applications by 25%.",
+      "href": "https://ieeexplore.ieee.org/document/10667122",
+      "image": "",
+      "tags": [
+        "Python",
+        "AI",
+        "Deep Learning",
+        "FPGA"
+      ],
+      "links": [
+        {
+          "name": "Publication",
+          "href": "https://ieeexplore.ieee.org/document/10667122",
+          "icon": "globe"
+        }
+      ]
+    }
+  ]
+}

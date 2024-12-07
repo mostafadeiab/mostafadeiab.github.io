@@ -1,0 +1,39 @@
+{
+  "career": [
+    {
+      "name": "University of Guelph - Advanced Manufacturing Lab",
+      "href": "https://www.uoguelph.ca/aml",
+      "title": "Undergraduate Research Assistant (Part-Time)",
+      "logo": "/aml.jpg",
+      "start": "Jan 2021",
+      "description": [
+        "Developed a machine learning-driven defect detection system, achieving 96% accuracy in quality control of automotive parts.",
+        "Reduced defective parts in an industrial paint line by 35%, resulting in significant cost savings."
+      ]
+    },
+    {
+      "name": "University of Guelph - Advanced Manufacturing Lab",
+      "href": "https://www.uoguelph.ca/aml",
+      "title": "Lab Systems Administrator (Contract)",
+      "logo": "/aml.jpg",
+      "start": "Sep 2019",
+      "end": "Dec 2020",
+      "description": [
+        "Set up and managed a Linux-based file server, improving data accessibility for research projects by 50%.",
+        "Designed custom-built computer systems, reducing downtime and improving overall lab performance."
+      ]
+    },
+    {
+      "name": "Manouche Express Mediterranean Grill",
+      "href": "https://www.manouchegrill.com",
+      "title": "Systems and Graphics Designer (Freelance)",
+      "logo": "/manouche.jpg",
+      "start": "May 2017",
+      "end": "Aug 2023",
+      "description": [
+        "Collaborated closely with a restaurant to design and update visually appealing menus, promotional materials, and event posters, enhancing marketing efforts.",
+        "Managed multiple design projects from concept through completion, working under tight deadlines to deliver creative solutions that met client needs."
+      ]
+    }
+  ]
+}

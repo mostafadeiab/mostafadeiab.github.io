@@ -1,8 +1,8 @@
-import type { NextConfig } from 'next';
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/mostafadeiab.github.io',
+const nextConfig = {
+  output: 'standalone',
+  basePath: '/homepage',
 };
 
 export default nextConfig;
