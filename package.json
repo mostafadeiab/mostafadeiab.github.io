@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",
-    "build": "npm run gen && next build",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -24,12 +23,11 @@
     "gray-matter": "^4.0.3",
     "langchain": "^0.3.6",
     "lucide-react": "^0.468.0",
-    "next": "^15.0.1",
+    "next": "14.1.0",
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.4.4",
-    "postcss": "^8.4.49",
-    "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-hook-form": "^7.54.0",
     "react-markdown": "^9.0.1",
     "resend": "^4.0.1",
@@ -42,8 +40,9 @@
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
-    "typescript": "^5"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5",
+    "autoprefixer": "^10.4.16"
   }
 }
