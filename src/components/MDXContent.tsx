@@ -13,13 +13,13 @@ const components = {
   Counter,
 };
 
-export default function MDXContent(
-  props: JSX.IntrinsicAttributes & MDXRemoteProps,
-) {
+export default function MDXContent(props: MDXRemoteProps) {
   return (
-    <MDXRemote
-      {...props}
-      components={{ ...components, ...(props.components || {}) }}
-    />
+    <div className="prose dark:prose-invert max-w-none">
+      <MDXRemote
+        {...props}
+        components={{ ...components, ...(props.components || {}) }}
+      />
+    </div>
   );
 }
