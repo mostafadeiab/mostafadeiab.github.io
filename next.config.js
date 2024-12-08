@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: '/portfolio',
+  basePath: '',
 };
 
-module.exports = nextConfig; // Change from 'export default' to 'module.exports'
+module.exports = nextConfig;
