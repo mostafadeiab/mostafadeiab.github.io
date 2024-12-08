@@ -26,10 +26,17 @@ jobs:
           cache: 'npm'
           
       - name: Install dependencies
-        run: npm install  # Changed from npm ci to npm install
+        run: npm install
         
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: ''
+        
+      - name: Copy Static Files
+        run: |
+          cp -r public/* out/
+          touch out/.nojekyll
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
