@@ -4,9 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '',
-  distDir: 'dist',
-  reactStrictMode: true,
+  basePath: '/portfolio',
 };
 
 module.exports = nextConfig; // Change from 'export default' to 'module.exports'
