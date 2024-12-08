@@ -26,16 +26,12 @@ jobs:
           node-version: 20
           cache: 'npm'
           
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
       - name: Install dependencies
         run: |
-          npm ci
-          npm install -D tailwindcss postcss autoprefixer
-          npx tailwindcss init -p
-        
-      - name: Build with Next.js
+          npm install
+          npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+      
+      - name: Build
         run: npm run build
         
       - name: Upload artifact

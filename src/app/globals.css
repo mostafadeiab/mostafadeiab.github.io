@@ -22,15 +22,8 @@
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 240 5% 64.9%;
+    --ring: 240 5.9% 10%;
     --radius: 0.5rem;
-    
-    /* Chart colors */
-    --chart-1: 240 5.9% 10%;
-    --chart-2: 240 4.8% 95.9%;
-    --chart-3: 240 3.8% 46.1%;
-    --chart-4: 240 5.9% 90%;
-    --chart-5: 240 5% 64.9%;
   }
  
   .dark {
@@ -53,15 +46,8 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
-
-    /* Chart colors for dark mode */
-    --chart-1: 0 0% 98%;
-    --chart-2: 240 3.7% 15.9%;
-    --chart-3: 240 5% 64.9%;
-    --chart-4: 240 3.7% 15.9%;
-    --chart-5: 240 4.9% 83.9%;
   }
-} /* This closing brace was missing */
+}
 
 @layer base {
   * {
@@ -69,26 +55,5 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-  .title {
-    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
-  }
-  .link {
-    @apply text-muted-foreground transition-colors hover:text-foreground;
-  }
-  .prose pre {
-    @apply overflow-x-auto rounded-lg bg-accent px-5 py-4 text-sm;
-  }
-  .prose pre code {
-    @apply p-0 leading-[1.75];
-  }
-  .prose code {
-    @apply rounded-lg px-1 py-0.5;
-  }
-  .prose code span {
-    @apply font-medium;
-  }
-  .input-error {
-    @apply ml-1 mt-2 text-sm text-rose-400;
   }
 }
