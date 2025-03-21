@@ -18,7 +18,6 @@ interface Props {
 
 export function ProjectCard({ project }: Props) {
   const { name, href, description, image, tags, links } = project;
-  const descriptionText = Array.isArray(description) ? description.join("\n\n") : description;
   return (
     <Card className="flex flex-col">
       <CardHeader>
@@ -37,7 +36,7 @@ export function ProjectCard({ project }: Props) {
       <CardContent className="flex flex-col gap-2">
         <CardTitle>{name}</CardTitle>
         <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-          {descriptionText}
+          {description}
         </Markdown>
       </CardContent>
       <CardFooter className="flex h-full flex-col items-start justify-between gap-4">
