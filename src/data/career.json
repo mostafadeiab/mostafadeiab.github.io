@@ -1,14 +1,25 @@
 {
   "career": [
     {
+      "name": "University of Guelph - Intelligent Systems Lab",
+      "href": "https://www.uoguelph.ca/aml",
+      "title": "Graduate Research Assistant",
+      "logo": "/aml.jpg",
+      "start": "Jan 2021",
+      "description": [
+        "Conducting preliminary research on development of Machine Learning (ML) system for optimizing integrated circuits (IC) projected to improve electrical performance and reliability."
+      ]
+    },
+    {
       "name": "University of Guelph - Advanced Manufacturing Lab",
       "href": "https://www.uoguelph.ca/aml",
       "title": "Undergraduate Research Assistant (Part-Time)",
       "logo": "/aml.jpg",
       "start": "Jan 2021",
       "description": [
-        "Developed a machine learning-driven defect detection system, achieving 96% accuracy in quality control of automotive parts.",
-        "Reduced defective parts in an industrial paint line by 35%, resulting in significant cost savings."
+        "Developed and deployed a Machine Vision defect detection system for detecting embedded and process defects from painted automobile parts using deflectometry data with TensorFlow and OpenCV. Achieved 96% accuracy and reduced processing time by 40%.",
+        "Designed user-friendly interface that allowed seamless setup settings and displayed live defects found on industrial paint line and inspection line reducing bypassed defective parts by 35% and reducing inspection time by 75%.",
+        "Deployed a Convolutional Neural Network (CNN) model within an industrial paint line, leading to annual cost savings of $3.5 million through enhanced quality control processes. Presented research at ISIME 2024."
       ]
     },
     {
@@ -19,8 +30,8 @@
       "start": "Sep 2019",
       "end": "Dec 2020",
       "description": [
-        "Set up and managed a Linux-based file server, improving data accessibility for research projects by 50%.",
-        "Designed custom-built computer systems, reducing downtime and improving overall lab performance."
+        "Configured and maintained a Debian Server with RAID to enhance data security and accessibility, supporting research operations. Developed custom tools for system monitoring using Python and Bash.",
+        "Optimized workstation configurations, integrating GPU acceleration and cooling systems, for 10+ researchers. Managed system security, reducing vulnerabilities, achieving zero security breaches."
       ]
     },
     {

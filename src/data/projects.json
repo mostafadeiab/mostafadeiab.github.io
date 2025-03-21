@@ -1,26 +1,52 @@
 {
   "projects": [
     {
-      "name": "Custom News Aggregator",
-      "description": "Developed an AI-powered software to aggregate and summarize daily news from various sources, tailored to user-specified topics. Implemented Web Scraping and NLP techniques to extract and summarize relevant news.",
+      "name": "DailyDigest",
+      "description": "Developing an AI-powered news aggregator using Natural Language Processing (NLP) libraries for topic-based summarization, integrating advanced scraping techniques with custom transformer-based models.",
       "image": "",
       "tags": [
         "Python",
         "AI",
         "Docker",
         "API"
+      ]
+    },
+    {
+      "name": "Homelab Server",
+      "description": ["Configured and maintained a homelab server using Infrastructure as Code (IaC), automating deployment of 15+ services including authentication, media management, and cloud storage through Docker with Ansible playbooks.",
+        "Implemented security measures with Authelia and Traefik reverse proxy, while ensuring reliability through Grafana monitoring and automated backups. Actively conducting vulnerability assessments and penetration testing."],  
+      "image": "",
+      "tags": [
+        "Authelia",
+        "Traefik",
+        "Nextcloud", 
+        "Docker",
+        "Ansible"
+      ]
+    },
+    {
+      "name": "Smart Utilities System",
+      "description": ["Developed a real-time water monitoring system utilizing Internet of Things (IoT) sensors, Bluetooth Low Energy (BLE) boards to enable anomaly detection for leaks, pressure fluctuations, and inefficiencies.",
+                      "Demonstrated real-time accurate predictions up to 72 hours ahead with 90% accuracy, supported by ML models trained historical data. Designed with a user-friendly interface for consumers."],
+      "image": "",
+      "tags": [
+        "BLE",
+        "IoT",
+        "Python",
+        "Raspberry Pi" 
       ],
       "links": [
         {
-          "name": "Source",
-          "href": "https://github.com/mostafadeiab/News-Aggregator",
-          "icon": "github"
+          "name": "Demo",
+          "href": "https://capstoneproject-eta.vercel.app/",
+          "icon": "globe"
         }
       ]
     },
     {
-      "name": "Advanced Computer Architecture",
-      "description": "Benchmarked Artificial and Convolutional Neural(ANN, CNN) on Edge Server Architectures, improving inference time by 30%. Validating hardware accelerators (GPU, FPGA), optimizing AI-based applications by 25%.",
+      "name": "ML-Arch",
+      "description": ["Benchmarked Artificial Neural Networks (ANN) and CNN on multiple Edge Server Architectures, achieving a 30% increase in inference speed and a 20% reduction in power consumption.",
+                      "Optimized AI processing through GPU and FPGA integration, achieving 30% faster processing times and reducing latency in real-time applications. Authored to the publication ”On Edge Level: The Impact of Adopting Deep Learning Techniques on Server Design.”"],
       "href": "https://ieeexplore.ieee.org/document/10667122",
       "image": "",
       "tags": [
