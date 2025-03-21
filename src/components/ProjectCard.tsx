@@ -1,4 +1,3 @@
-import { Badge } from "@/src/components/ui/Badge";
 import {
   Card,
   CardContent,
@@ -12,19 +11,6 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import Icon from "./Icon";
 
-interface Project {
-  name: string;
-  description: string | string[];
-  image?: string;
-  tags?: string[];
-  links?: {
-    name: string;
-    href: string;
-    icon: string;
-  }[];
-  href?: string;
-}
-
 interface Props {
   project: Project;
 }
@@ -36,13 +22,15 @@ export function ProjectCard({ project }: Props) {
     <Card className="flex flex-col">
       <CardHeader>
         {image && (
-          <Image
-            src={image}
-            alt={name}
-            width={500}
-            height={300}
-            className="h-40 w-full object-cover object-top"
-          />
+          <Link href={href || image}>
+            <Image
+              src={image}
+              alt={name}
+              width={500}
+              height={300}
+              className="h-40 w-full object-cover object-top"
+            />
+          </Link>
         )}
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
