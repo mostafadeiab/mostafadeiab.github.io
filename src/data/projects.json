@@ -12,8 +12,8 @@
       ],
       "links": [
         {
-          "name": "",
-          "href": "",
+          "name": "Source",
+          "href": "https://github.com/mostafadeiab/",
           "icon": "github"
         }
       ]
@@ -31,9 +31,9 @@
       ],
       "links": [
         {
-          "name": "",
-          "href": "",
-          "icon": "globe"
+          "name": "Source",
+          "href": "https://github.com/mostafadeiab/homelab-ansible",
+          "icon": "github"
         }
       ]
     },
