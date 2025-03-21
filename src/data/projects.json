@@ -9,8 +9,15 @@
         "AI",
         "Docker",
         "API"
+      ],
+      "links": [
+        {
+          "name": "",
+          "href": "",
+          "icon": "github"
+        }
       ]
-    },
+    }, 
     {
       "name": "Homelab Server",
       "description": ["Configured and maintained a homelab server using Infrastructure as Code (IaC), automating deployment of 15+ services including authentication, media management, and cloud storage through Docker with Ansible playbooks.",
@@ -22,6 +29,13 @@
         "Nextcloud", 
         "Docker",
         "Ansible"
+      ],
+      "links": [
+        {
+          "name": "",
+          "href": "",
+          "icon": "globe"
+        }
       ]
     },
     {
