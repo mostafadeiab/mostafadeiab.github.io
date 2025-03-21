@@ -12,13 +12,26 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import Icon from "./Icon";
 
+interface Project {
+  name: string;
+  description: string | string[];
+  image?: string;
+  tags?: string[];
+  links?: {
+    name: string;
+    href: string;
+    icon: string;
+  }[];
+  href?: string;
+}
+
 interface Props {
   project: Project;
 }
 
 export function ProjectCard({ project }: Props) {
   const { name, href, description, image, tags, links } = project;
-
+  const descriptionText = Array.isArray(description) ? description.join("\n\n") : description;
   return (
     <Card className="flex flex-col">
       <CardHeader>
@@ -37,7 +50,7 @@ export function ProjectCard({ project }: Props) {
       <CardContent className="flex flex-col gap-2">
         <CardTitle>{name}</CardTitle>
         <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground dark:prose-invert">
-          {description}
+          {descriptionText}
         </Markdown>
       </CardContent>
       <CardFooter className="flex h-full flex-col items-start justify-between gap-4">
