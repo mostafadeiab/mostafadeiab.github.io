@@ -20,7 +20,6 @@
 /out/
 
 # production
-/build
 /dist
 
 # misc
