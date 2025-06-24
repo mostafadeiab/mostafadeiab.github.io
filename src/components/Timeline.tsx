@@ -10,67 +10,42 @@ const Timeline = () => {
     (a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
   );
 
-  const grouped = {
-    experience: sorted.filter((item) => item.type === 'experience'),
-    education: sorted.filter((item) => item.type === 'education')
-  };
-
   return (
     <section id="timeline" className="section">
       <h2 className="section-title">Timeline</h2>
-      <div className="timeline-split-container">
-        <div className="timeline-column">
-          <h3 className="timeline-column-title">Experience</h3>
-          {grouped.experience.map((item) => (
-            <div
-              key={item.id}
-              className="timeline-item"
-              onMouseEnter={() => setHoveredItem(item.id)}
-              onMouseLeave={() => setHoveredItem(null)}
-            >
-              <div className="timeline-dot">
-                <Briefcase size={18} />
-              </div>
-              <div className="timeline-content">
-                <div className="timeline-header">
-                  <h3>{item.title}</h3>
-                  <div className="institution">{item.institution}</div>
-                  <div className="duration">{item.duration}</div>
-                </div>
-                {hoveredItem === item.id && item.description && (
-                  <div className="timeline-details">
-                    <ul>
-                      {item.description.map((line, i) => (
-                        <li key={i}>{line}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="timeline-container">
+        {sorted.map((item, index) => {
+          const isLeft = index % 2 === 0;
+          const Icon = item.type === 'experience' ? Briefcase : GraduationCap;
 
-        <div className="timeline-column">
-          <h3 className="timeline-column-title">Education</h3>
-          {grouped.education.map((item) => (
+          return (
             <div
               key={item.id}
-              className="timeline-item"
+              className={`timeline-item-2col ${isLeft ? 'left' : 'right'}`}
               onMouseEnter={() => setHoveredItem(item.id)}
               onMouseLeave={() => setHoveredItem(null)}
             >
-              <div className="timeline-dot">
-                <GraduationCap size={18} />
+              <div className="timeline-icon">
+                <Icon size={18} />
               </div>
+
               <div className="timeline-content">
                 <div className="timeline-header">
                   <h3>{item.title}</h3>
                   <div className="institution">{item.institution}</div>
                   <div className="duration">{item.duration}</div>
                 </div>
+
                 {hoveredItem === item.id && (
                   <div className="timeline-details">
+                    {item.description && (
+                      <ul>
+                        {item.description.map((line, i) => (
+                          <li key={i}>{line}</li>
+                        ))}
+                      </ul>
+                    )}
+
                     {item.overview && <p>{item.overview}</p>}
 
                     {item.achievements && (
@@ -78,7 +53,9 @@ const Timeline = () => {
                         <strong>Achievements:</strong>
                         <ul className="tag-list">
                           {item.achievements.map((ach, i) => (
-                            <span  key={i} className="tag-item">{ach}</span >
+                            <span key={i} className="tag-item">
+                              {ach}
+                            </span>
                           ))}
                         </ul>
                       </div>
@@ -89,7 +66,9 @@ const Timeline = () => {
                         <strong>Key Skills:</strong>
                         <ul className="tag-list">
                           {item.skills.map((skill, i) => (
-                            <span  key={i} className="tag-item">{skill}</span >
+                            <span key={i} className="tag-item">
+                              {skill}
+                            </span>
                           ))}
                         </ul>
                       </div>
@@ -100,7 +79,9 @@ const Timeline = () => {
                         <strong>Relevant Courses:</strong>
                         <ul className="tag-list">
                           {item.courses.map((course, i) => (
-                            <span  key={i} className="tag-item">{course}</span >
+                            <span key={i} className="tag-item">
+                              {course}
+                            </span>
                           ))}
                         </ul>
                       </div>
@@ -109,8 +90,8 @@ const Timeline = () => {
                 )}
               </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </section>
   );

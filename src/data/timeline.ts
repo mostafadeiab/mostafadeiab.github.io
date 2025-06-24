@@ -30,7 +30,7 @@ export const timelineItems: TimelineItem[] = [
     courses: ['Optimization Techniques', 
               'IoT', 
               'Advanced Software Computing', 
-              'Machine Learning Applicationss']
+              'Machine Learning Applications']
   },
   {
     id: 2,
@@ -40,12 +40,20 @@ export const timelineItems: TimelineItem[] = [
     duration: 'Jan. 2025 - Present',
     location: 'Guelph, ON',
     startDate: '2025-01',
-    description: [
-      'Developing a semantic-aware orchestration framework that dynamically manages communication and computing resources in 6G networks.',
-      'Leading ML-based optimization research for ICs using advanced TensorFlow and PyTorch models.',
-      'Developing and implementing secure VLC-IoT resource allocation frameworks with 30% improved resilience.',
-      'Designing MAP algorithms to optimize network coverage while reducing energy consumption by approximately 22%.'
-    ]
+    //description: [
+      //'Developing a semantic-aware orchestration framework that dynamically manages communication and computing resources in 6G networks.',
+      //'Leading ML-based optimization research for ICs using advanced TensorFlow and PyTorch models.',
+      //'Developing and implementing secure VLC-IoT resource allocation frameworks with 30% improved resilience.',
+      //'Designing MAP algorithms to optimize network coverage while reducing energy consumption by approximately 22%.'
+    //],
+    skills: ['6G Network Orchestration',
+              'Machine Learning Optimization',
+              'TensorFlow',
+              'PyTorch',
+              'Secure VLC-IoT Resource Allocation',
+              'MAP Algorithms'],
+    overview: 'As a Graduate Research Assistant, I am focused on developing advanced frameworks for 6G networks, optimizing resource allocation using machine learning, and enhancing the security and efficiency of IoT systems. My research aims to push the boundaries of network orchestration and resource management in next-generation communication systems.',
+    achievements: ['Published research in top-tier journals', 'Presented at international conferences']
   },
   {
     id: 3,
@@ -56,11 +64,18 @@ export const timelineItems: TimelineItem[] = [
     location: 'Guelph, ON',
     startDate: '2021-01',
     endDate: '2024-12',
-    description: [
-      'Developed a Machine Vision detection system for automotive parts using deflectometry data (96% accuracy, 40% faster).',
-      'Designed UI for live defect display, reducing inspection time by 75% and missed defects by 35%.',
-      'Integrated CNN models into industrial processes, contributing to $3.5M annual cost savings. Presented at ISIME 2024.'
-    ]
+    //description: [
+      //'Developed a Machine Vision detection system for automotive parts using deflectometry data (96% accuracy, 40% faster).',
+      //'Designed UI for live defect display, reducing inspection time by 75% and missed defects by 35%.',
+      //'Integrated CNN models into industrial processes, contributing to $3.5M annual cost savings. Presented at ISIME 2024.'
+    //],
+    skills: ['Machine Vision',
+              'Deflectometry Data Analysis',
+              'UI Design for Industrial Applications',
+              'Convolutional Neural Networks (CNNs)',
+              'Industrial Process Integration'],
+    overview: 'As an Undergraduate Research Assistant, I focused on integrating machine vision systems into industrial processes, significantly improving efficiency and accuracy. My work involved developing a detection system using deflectometry data, designing user interfaces for real-time defect display, and implementing CNN models to enhance manufacturing operations.',
+    achievements: ['Presented research at ISIME 2024']
   },
   {
     id: 4,
@@ -74,16 +89,15 @@ export const timelineItems: TimelineItem[] = [
     endDate: '2024-12',
     overview: 'As a graduate in Computer Engineering, my expertise encompasses a wide range of skills essential for modern computing systems. This includes circuit design and development, hardware integration, and system-level design integration. I am well-versed in the science and tools required for designing, constructing, implementing, and maintaining both software and hardware components in computing systems.',
     achievements: ["Dean's Honor List for 2 consecutive years"],
-    skills: ['Circuit design and development',
-              'Hardware integration',
-              'System-level design integration',
-              'Software and hardware component maintenance'],
-    courses: ['Data Structures and Algorithms',
+    skills: ['Circuit Design & Development',
+              'Hardware Integration',
+              'System-level Design Integration'],
+    courses: ['Data Structures & Algos',
               'Computer Networks',
               'Operating Systems',
-              'Digital Systems Design',
-              'Embedded Systems Programming',
-              'Modeling Complex Systems']
+              'Real-Time Systems',
+              'Embedded Systems',
+              'VLSI Digital Design']
   },
   {
     id: 5,

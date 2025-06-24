@@ -4,7 +4,7 @@ const Hero = ({ scrollToSection }: { scrollToSection: (id: string) => void }) =>
   const handleDownloadResume = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '../../public/current_res_20250614_embed.pdf'; // Update this path to your actual resume file
+    link.href = '/current_res_20250624_embed.pdf'; // Update this path to your actual resume file
     link.download = 'Mostafa_Deiab_Resume.pdf'; // The filename for download
     document.body.appendChild(link);
     link.click();
