@@ -16,7 +16,7 @@ const Hero = ({ scrollToSection }: { scrollToSection: (id: string) => void }) =>
       <div className="hero-content">
         <h1>Hi, I'm <span className="highlight">Mostafa Deiab</span></h1>
         <p>
-          Pursuing MASc in Computer Engineering with Specialization in AI @ UofG
+          Embedded AI Engineer — deploying ML on edge hardware, from FPGAs to microcontrollers
         </p>
         <button className="cta-button" onClick={handleDownloadResume}>
           Download Resume

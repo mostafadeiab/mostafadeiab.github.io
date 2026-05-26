@@ -41,14 +41,21 @@ const About = () => {
       <div className="about-content">
         <div className="about-text">
           <p className="about-text">
-            Currently pursuing my Master's degree while working as a research assistant, currently developing a semantic-aware orchestration 
-            framework that dynamically manages communication and computing resources in 6G networks, optimizing for efficiency, adaptability, 
-            and user-centric service delivery.
+            I build machine learning systems that run on hardware. For the past 4+ years at the University of Guelph,
+            I've deployed computer vision and edge AI in real manufacturing environments. My CNN-based defect inspection
+            systems run on Basler industrial cameras, processing automotive parts at under 200ms latency with 99.5% uptime.
+            These systems operate on plant floors today, contributing to $3.5M+ in estimated annual savings.
           </p>
           <p className="about-text">
-            Highly motivated Computer Engineering graduate student specializing in AI/ML, seeking to apply machine learning techniques 
-            to real-world problems. Proven ability to deploy AI systems, optimize models for performance, and integrate technology into existing 
-            infrastructure. Passionate about leveraging AI to enhance industrial, environmental, and other processes.
+            As a graduate researcher in the Intelligent Systems Lab, I deploy semantic video encoders on AMD Kria FPGAs
+            via Vitis AI quantization, profile DPU subgraph execution, and design channel emulators in Vivado HLS for
+            5G communication pipelines. I've published at CCECE and ISIME 2024 as first author on hardware-aware edge AI
+            benchmarking and industrial inspection.
+          </p>
+          <p className="about-text">
+            I work at the intersection of embedded systems, ML deployment, and hardware-software co-design. C/C++ for
+            microcontrollers, Python for model training, HLS for FPGAs. Open to embedded AI, edge ML, firmware, and
+            systems engineering roles across Canada and the US.
           </p>
         </div>
       </div>

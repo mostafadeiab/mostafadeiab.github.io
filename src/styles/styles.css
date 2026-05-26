@@ -675,9 +675,122 @@
 
 
 /* Projects Section */
+
+/* Featured pinned label */
+.featured-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
+}
+
+/* Featured 3-column grid */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 3.5rem;
+}
+
+/* Section divider between featured and rest */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  color: var(--text-tertiary);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* Project visual header (mini architecture diagram) */
+.project-visual {
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.featured-card .project-visual {
+  height: 185px;
+}
+
+/* Subtle dot-grid overlay */
+.visual-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+  pointer-events: none;
+}
+
+/* Pipeline row of nodes */
+.visual-pipeline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.visual-pipeline-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.visual-node {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 66px;
+}
+
+.visual-node-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  line-height: 1.2;
+}
+
+.visual-node-sub {
+  display: block;
+  font-size: 0.58rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+.visual-arrow {
+  display: flex;
+  align-items: center;
+  opacity: 0.55;
+  flex-shrink: 0;
+}
+
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
@@ -938,6 +1051,10 @@
 
   .timeline-dot {
     left: 20px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
   }
 
   .projects-grid {

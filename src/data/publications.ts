@@ -21,5 +21,14 @@ export const publications: Publication[] = [
     doi: '10.1109/CCECE59415.2024.10667122',
     url: 'https://ieeexplore.ieee.org/document/10667122',
     abstract: 'This work discusses the significance of hardware accelerators like GPUs and FPGAs for Deep Learning (DL) models due to their intensive computational demands, emphasizing the need for cost-effective solutions. It highlights the importance of integrating GPUs and FPGAs into edge server design to enhance computational efficiency in edge computing applications. The evaluation assessed the performance of three machines with varying specifications. The machine equipped with Nvidia GeForce RTX 3080 Ti GPU demonstrated superior performance, notably in terms of shorter training time compared to the other benchmarks. However, the variance in prediction accuracy among the machines remained relatively consistent, with approximately a 4% difference.'
+  },
+  {
+    id: 2,
+    title: 'Machine Vision Defect Detection for Automotive Manufacturing Using Deflectometry and Deep Learning',
+    authors: ['Mostafa Deiab', 'Ahmed Refaey'],
+    venue: 'International Symposium on Industrial and Manufacturing Engineering (ISIME)',
+    year: 2024,
+    type: 'conference',
+    abstract: 'Presents a CNN-based machine vision system for automated defect detection in automotive part manufacturing using deflectometry data. The system achieves 96% detection accuracy with 40% faster inspection throughput compared to manual methods, and has been deployed in production environments contributing to significant cost reductions.'
   }
 ];

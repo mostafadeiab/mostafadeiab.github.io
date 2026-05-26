@@ -1,4 +1,3 @@
-// src/data/projects.ts
 export interface Project {
   id: number;
   title: string;
@@ -7,103 +6,129 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   categories: string[];
+  featured?: boolean;
+  visualType: string;
 }
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Homelab Server",
+    title: "Industrial Defect Inspection System",
     description:
-      "Built and maintained a homelab server using Infrastructure as Code (Ansible, Docker) with security tools like Authelia, Traefik, and regular scanning.",
-    technologies: ["Docker", "Kubernetes", "Ansible", "Traefik", "Authelia"],
-    categories: ["DevOps"]
+      "CNN-based machine vision system deployed on plant floors for automotive part inspection using Basler cameras and deflectometry data. Achieves 96% accuracy at <200ms latency with 99.5% uptime, contributing to $3.5M+ annual savings.",
+    technologies: ["Python", "TensorFlow", "OpenCV", "C++", "Basler SDK"],
+    categories: ["AI / ML", "Embedded Systems"],
+    featured: true,
+    visualType: "vision"
   },
   {
     id: 2,
-    title: "Smart Utilities System",
+    title: "AquaGuard AI",
     description:
-      "Real-time IoT solution with BLE boards for water monitoring and predictive maintenance with 70% forecasting accuracy.",
-    technologies: ["BLE", "Sensor Fusion", "STM32", "C/C++", "Python"],
-    categories: ["Embedded IoT", "AI", "Real-Time Systems"]
+      "Real-time IoT water monitoring system with BLE-connected STM32 boards, sensor fusion for predictive maintenance, and 70% forecasting accuracy for leak detection.",
+    technologies: ["STM32", "BLE", "Sensor Fusion", "C/C++", "Python", "FreeRTOS"],
+    categories: ["Embedded Systems", "AI / ML"],
+    featured: true,
+    visualType: "iot"
   },
   {
     id: 3,
-    title: "ML-Arch",
+    title: "Transitify",
     description:
-      "Benchmarked ANN/CNN on edge devices with FPGA/GPU integration, improving inference speed and power usage.",
-    technologies: ["TFLite", "ONNX", "Jetson Nano", "Raspberry Pi", "FPGA"],
-    categories: ["AI", "Edge Computing", "FPGA"]
+      "Real-time transit tracking app using GTFS data feeds with a dual-map UI built on PixiJS. Includes AODA-compliant community features for accessible transit planning.",
+    technologies: ["JavaScript", "Python", "Firebase", "PixiJS"],
+    categories: ["Web Development", "Software"],
+    featured: true,
+    visualType: "transit"
   },
   {
     id: 4,
-    title: "Transitify",
+    title: "ML-Arch: Edge AI Benchmarking",
     description:
-      "Real-time transit tracking app using GTFS data with dual-map UI and AODA-compliant community features.",
-    technologies: ["JavaScript", "Python", "Firebase", "PixiJS"],
-    categories: ["Web", "Frontend"]
+      "Benchmarked ANN/CNN inference on edge devices (Jetson Nano, Raspberry Pi, FPGA) with TFLite and ONNX quantization. Measured power-accuracy tradeoffs across hardware targets.",
+    technologies: ["TFLite", "ONNX", "Jetson Nano", "Raspberry Pi", "FPGA", "Python"],
+    categories: ["AI / ML", "FPGA / Hardware"],
+    visualType: "edge-ai"
   },
   {
     id: 5,
-    title: "Advanced UNIX Shell",
+    title: "Homelab Server",
     description:
-      "Feature-rich shell with piping, redirection, and job control using POSIX system calls and modular architecture.",
-    technologies: ["C", "POSIX"],
-    categories: ["Systems Programming"]
+      "Built and maintained a homelab server using Infrastructure as Code with Ansible playbooks, Docker Compose stacks, and a secure reverse proxy setup using Traefik and Authelia 2FA.",
+    technologies: ["Docker", "Kubernetes", "Ansible", "Traefik", "Authelia"],
+    categories: ["Infrastructure"],
+    visualType: "homelab"
   },
   {
     id: 6,
-    title: "Multi-Threaded CPU Scheduler Simulator",
+    title: "FPGA-Based Arithmetic Unit Optimization",
     description:
-      "Discrete event simulator for FCFS/RR with metrics generation and event-driven execution model.",
-    technologies: ["C", "Threading"],
-    categories: ["Operating Systems"]
+      "Designed and benchmarked VHDL ALUs targeting LUT utilization and power efficiency. Synthesized with Vivado, comparing carry-lookahead vs. ripple-carry architectures.",
+    technologies: ["VHDL", "Vivado", "Xilinx"],
+    categories: ["FPGA / Hardware"],
+    visualType: "fpga"
   },
   {
     id: 7,
-    title: "Interactive ML Web Platform",
+    title: "Real-Time Home Security System",
     description:
-      "Web app to train MNIST models in browser with SWIG-wrapped C backend and SQL model storage.",
-    technologies: ["Python", "C", "SWIG", "JavaScript", "SQLite"],
-    categories: ["AI", "Full Stack"]
+      "Camera-based security system on STM32 with FreeRTOS task scheduling, ArduCAM JPEG compression, DMA transfers, and interrupt-driven real-time alerting.",
+    technologies: ["STM32", "FreeRTOS", "C/C++", "ArduCAM", "DMA"],
+    categories: ["Embedded Systems"],
+    visualType: "security"
   },
   {
     id: 8,
-    title: "GPS Route Management System",
+    title: "16-Bit CPU Design",
     description:
-      "Full-stack app with GPX file CRUD, MySQL backend, and C parser bound to Node.js.",
-    technologies: ["C", "Node.js", "MySQL", "GPX"],
-    categories: ["Geospatial", "Web"]
+      "Full 16-bit processor in VHDL including ALU, register file, control unit, and memory subsystem. Verified with comprehensive testbench simulation.",
+    technologies: ["VHDL", "Digital Design", "ModelSim"],
+    categories: ["FPGA / Hardware"],
+    visualType: "cpu"
   },
   {
     id: 9,
-    title: "Motor Control Systems Design",
+    title: "Advanced UNIX Shell",
     description:
-      "P/PD/PID controller design and testing in MATLAB for optimized motor system performance.",
-    technologies: ["MATLAB", "Control Theory"],
-    categories: ["Control Systems"]
+      "Feature-rich shell with piping, redirection, signal handling, and job control implemented with POSIX system calls. Modular architecture supporting built-in and external commands.",
+    technologies: ["C", "POSIX"],
+    categories: ["Software"],
+    visualType: "shell"
   },
   {
     id: 10,
-    title: "Real-Time Home Security System",
+    title: "Multi-Threaded CPU Scheduler Simulator",
     description:
-      "Built camera system using STM32, FreeRTOS, ArduCAM with JPEG compression and real-time alerting.",
-    technologies: ["STM32", "FreeRTOS", "C/C++"],
-    categories: ["Embedded IoT", "Real-Time Systems"]
+      "Discrete event simulator for FCFS and Round Robin scheduling algorithms with metrics generation and an event-driven execution model.",
+    technologies: ["C", "Threading"],
+    categories: ["Software"],
+    visualType: "scheduler"
   },
   {
     id: 11,
-    title: "16-Bit CPU Design and Implementation",
+    title: "Interactive ML Web Platform",
     description:
-      "Designed VHDL CPU including ALU, memory subsystems, and testbench verification.",
-    technologies: ["VHDL", "Digital Design"],
-    categories: ["Computer Architecture"]
+      "Browser-based app to train MNIST neural network models using a SWIG-wrapped C backend for performance. Trained models stored and retrieved with SQLite.",
+    technologies: ["Python", "C", "SWIG", "JavaScript", "SQLite"],
+    categories: ["AI / ML", "Web Development"],
+    visualType: "mlweb"
   },
   {
     id: 12,
-    title: "FPGA-Based Arithmetic Unit Optimization",
+    title: "GPS Route Management System",
     description:
-      "Built and benchmarked VHDL ALUs optimizing for LUT and power usage using Vivado.",
-    technologies: ["VHDL", "Vivado"],
-    categories: ["FPGA", "Hardware"]
+      "Full-stack web app for GPX route file CRUD operations with a C parser bound to Node.js via N-API and a MySQL backend.",
+    technologies: ["C", "Node.js", "MySQL", "GPX"],
+    categories: ["Software", "Web Development"],
+    visualType: "gps"
+  },
+  {
+    id: 13,
+    title: "Motor Control Systems Design",
+    description:
+      "P, PD, and PID controller design and simulation in MATLAB/Simulink for DC motor systems, with step response testing and gain optimization.",
+    technologies: ["MATLAB", "Control Theory"],
+    categories: ["Embedded Systems"],
+    visualType: "control"
   }
 ];

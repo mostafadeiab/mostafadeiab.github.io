@@ -1,7 +1,8 @@
 export const skills = {
-  languages: ['C/C++', 'Python', 'Bash', 'MATLAB', 'VHDL', 'SQL', 'JavaScript', 'Java'],
-  frameworks: ['FreeRTOS', 'TensorFlow', 'TFLite', 'PyTorch', 'OpenCV', 'SWIG', 'CMSIS', 'HAL/LL Drivers', 'TinyML'],
-  embedded: ['STM32', 'ARM Cortex-M', 'I2C', 'SPI', 'UART', 'DMA', 'Interrupts', 'Scheduling'],
-  wireless: ['BLE', 'Sensor Fusion', 'VLC', 'GPS Integration', 'IMU Interfacing'],
-  tools: ['Git', 'JTAG/SWD', 'Oscilloscope', 'Logic Analyzer', 'STM32', 'Linux', 'Docker', 'CI/CD', 'AWS', 'PostgreSQL']
+  languages: ['C/C++', 'Python', 'VHDL', 'Bash', 'MATLAB', 'SQL'],
+  'ml & edge ai': ['TensorFlow', 'TFLite', 'PyTorch', 'OpenCV', 'TinyML', 'ONNX', 'Vitis AI', 'Quantization'],
+  embedded: ['STM32', 'ARM Cortex-M', 'FreeRTOS', 'I2C', 'SPI', 'UART', 'DMA', 'Interrupts', 'CMSIS', 'HAL/LL Drivers'],
+  fpga: ['Vivado', 'Vitis HLS', 'AMD Kria', 'DPU Integration', 'RTL Design', 'Synthesis & Timing'],
+  wireless: ['BLE', 'Sensor Fusion', 'VLC', 'IMU Interfacing', '5G/6G Channel Modeling'],
+  tools: ['Git', 'JTAG/SWD', 'Oscilloscope', 'Logic Analyzer', 'Linux', 'Docker', 'CI/CD', 'AWS']
 };
