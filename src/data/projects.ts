@@ -38,7 +38,6 @@ export const projects: Project[] = [
       "Real-time transit tracking app using GTFS data feeds with a dual-map UI built on PixiJS. Includes AODA-compliant community features for accessible transit planning.",
     technologies: ["JavaScript", "Python", "Firebase", "PixiJS"],
     categories: ["Web Development", "Software"],
-    featured: true,
     visualType: "transit"
   },
   {
@@ -130,5 +129,15 @@ export const projects: Project[] = [
     technologies: ["MATLAB", "Control Theory"],
     categories: ["Embedded Systems"],
     visualType: "control"
+  },
+  {
+    id: 14,
+    title: "Vehicle CAN Bus Analyzer",
+    description:
+      "STM32 firmware with FreeRTOS for CAN frame capture and decoding at 500 kbps across multiple ECUs. Reverse-engineered proprietary CAN message IDs by correlating vehicle behavior with raw frame data, mapping signals beyond standard OBD-II PIDs.",
+    technologies: ["STM32", "CAN (OBD-II)", "FreeRTOS", "C", "Python", "UART"],
+    categories: ["Embedded Systems"],
+    featured: true,
+    visualType: "canbus"
   }
 ];
